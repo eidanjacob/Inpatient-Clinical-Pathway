@@ -1,0 +1,163 @@
+<div class="diagram">
+  <div style="text-align:center;">
+    <div class="box">
+      <a class="popup" href="/preop.html">Pre-Operative Clinic</a>
+    </div>
+    <br />
+    <div class="arrow-wrapper">
+      <div class="arrow"></div>
+      <br />
+      <div class="arrow-down"></div>
+    </div>
+  </div>
+</div>
+<div class="diagram">
+  <div style="text-align:center;">
+    <div class="invisible-box"></div>
+    <div class="box">
+      <a href="test.com">Surgical Day</a>
+    </div>
+    <div class="side-box">
+      <a class="popup" href="/preop.html">Guidelines</a>
+    </div>
+    <br />
+    <div class="arrow-wrapper">
+      <div class="arrow"></div>
+      <br />
+      <div class="arrow-down"></div>
+    </div>
+  </div>
+  <div class="diagram-text">
+    <b style="color:#9a0041">POD 0 Goals</b>
+    <p>PCA Initiation</p>
+    <p>Analgesia regimen</p>
+  </div>
+</div>
+<div class="diagram">
+  <div style="text-align:center;">
+    <div class="box">
+      <a href="test.com">POD 1</a>
+    </div>
+    <br />
+    <div class="arrow-wrapper">
+      <div class="arrow"></div>
+      <br />
+      <div class="arrow-down"></div>
+    </div>
+  </div>
+  <div class="diagram-text">
+    <b style="color:#9a0041">POD 1 Goals</b>
+    <p>Begin PO Analgesia</p>
+    <p>Advance Mobility</p>
+    <p>Consider DC Foley</p>
+  </div>
+</div>
+<div class="diagram">
+  <div style="text-align:center;">
+    <div class="box">
+      <a href="test.com">POD 2</a>
+    </div>
+    <br />
+    <div class="arrow-wrapper">
+      <div class="arrow"></div>
+      <br />
+      <div class="arrow-down"></div>
+    </div>
+  </div>
+  <div class="diagram-text">
+    <b style="color:#9a0041">POD 2 Goals</b>
+    <p>Begin PO Analgesia</p>
+    <p>Advance Mobility</p>
+    <p>Consider DC Foley</p>
+  </div>
+</div>
+<div class="diagram">
+  <div style="text-align:center;">
+    <div class="box">
+      <a href="test.com">POD 3</a>
+    </div>
+    <br />
+    <div class="arrow-wrapper">
+      <div class="arrow"></div>
+      <br />
+      <div class="arrow-down"></div>
+    </div>
+  </div>
+  <div class="diagram-text">
+    <b style="color:#9a0041">POD 3 Goals</b>
+    <p>Begin PO Analgesia</p>
+    <p>Advance Mobility</p>
+    <p>Consider DC Foley</p>
+  </div>
+</div>
+<div class="diagram">
+  <div style="text-align:center;">
+    <div class="box">
+      <a href="test.com">Discharge</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .diagram-text {
+    margin-top: 22px;
+    margin-left: 50px;
+  }
+
+  .diagram {
+    font-family: verdana, arial, sans-serif;
+    width: 600px;
+    height: 160px;
+  }
+
+  .box {
+    background-color: rgba(0, 174, 26, 0.5);
+    border: 1px solid rgba(120, 120, 255, 1);
+    padding: 4px;
+    width: 170px;
+    display: inline-block;
+  }
+
+  .invisible-box {
+    background-color: rgba(150, 150, 255, 0);
+    border: 1px solid rgba(120, 120, 255, 0);
+    padding: 4px;
+    width: 170px;
+    display: inline-block;
+  }
+
+  .side-box {
+    background-color: rgba(150, 150, 255, 0.5);
+    border: 1px solid rgba(120, 120, 255, 1);
+    padding: 4px;
+    width: 170px;
+    display: inline-block;
+  }
+
+  .arrow-wrapper {
+    position: absolute;
+    display: inline-block;
+    left: 300px;
+  }
+
+  .arrow {
+    display: inline-block;
+    width: 2px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid rgba(0, 0, 0, 0.3);
+  }
+</style>
