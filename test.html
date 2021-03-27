@@ -1,7 +1,7 @@
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a class="popup" href="/preop.html">Pre-Operative Clinic</a>
+      <a href="JavaScript:newPopup('preop.html');">Pre-Operative Clinic</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -15,10 +15,10 @@
   <div style="text-align:center;">
     <div class="invisible-box"></div>
     <div class="box">
-      <a href="test.com">Surgical Day</a>
+      <a href="JavaScript:newPopup('surgical-day.html');">Surgical Day</a>
     </div>
     <div class="side-box">
-      <a class="popup" href="/preop.html">Guidelines</a>
+      <a class="popup" href="JavaScript:newPopup('general-guidelines.html');">Guidelines</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -36,7 +36,7 @@
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a href="test.com">POD 1</a>
+      <a href="JavaScript:newPopup('pod-one.html');">POD 1</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -55,7 +55,7 @@
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a href="test.com">POD 2</a>
+      <a href="JavaScript:newPopup('pod-two.html');">POD 2</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -74,7 +74,7 @@
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a href="test.com">POD 3</a>
+      <a href="JavaScript:newPopup('pod-three.html');">POD 3</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -93,7 +93,7 @@
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a href="test.com">Discharge</a>
+      Discharge
     </div>
   </div>
 </div>
@@ -161,3 +161,9 @@
     border-top: 8px solid rgba(0, 0, 0, 0.3);
   }
 </style>
+
+<script type="text/javascript">
+function newPopup(url) {
+  popupWindow = window.open(url, 'popUpWindow','height=600,width=600,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
