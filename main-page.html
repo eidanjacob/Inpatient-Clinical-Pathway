@@ -32,8 +32,12 @@
     <p>PCA Initiation</p>
     <p>Analgesia regimen</p>
   </div>
-  <div class="right-side-box" style="text-align:center;"><a href="JavaScript:newPopup('pump-setup.html');
-    ">Pump Setup</a></div>
+  <div class="right-upper-box">
+    <a href="JavaScript:newPopup('pump-setup.html');">Pump Setup</a>
+  </div>
+  <div class="right-upper-box">
+    <a href="JavaScript:newPopup('hemodilution.html');">Hemodilution</a>
+  </div>
 </div>
 <div class="diagram">
   <div style="text-align:center;">
@@ -53,7 +57,6 @@
     <p>Advance Mobility</p>
     <p>Consider DC Foley</p>
   </div>
-  <div class="right-side-box" style="text-align:center;"><a href="JavaScript:newPopup('hemodilution.html');">Hemodilution</a></div>
 </div>
 <div class="diagram">
   <div style="text-align:center;">
@@ -72,7 +75,12 @@
     <p>Begin PO Analgesia</p>
     <p>Advance Mobility</p>
   </div>
-  <div class="right-side-box" style="text-align:center;">Fever Management</div>
+  <div class="right-lower-box">
+    <a href="JavaScript:newPopup('fever.html');">Fever Management</a>
+  </div>
+  <div class="right-lower-box">
+    <a href="JavaScript:newPopup('complications.html');">Complications</a>
+  </div>
 </div>
 <div class="diagram">
   <div style="text-align:center;">
@@ -107,7 +115,18 @@
     padding: 0px;
   }
 
-  .right-side-box {
+  .right-upper-box {
+    background-color: rgba(255, 0, 225, 0.673);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    width: 170px;
+    display: r;
+    margin-left: 750px;
+    margin-top: -100px;
+    text-align: center;
+  }
+
+  .right-lower-box {
     background-color: rgba(255, 0, 0, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 4px;
@@ -115,6 +134,7 @@
     display: r;
     margin-left: 750px;
     margin-top: -100px;
+    text-align:center;
   }
 
   .diagram-text {
@@ -178,7 +198,7 @@
 </style>
 
 <script type="text/javascript">
-function newPopup(url) {
-  popupWindow = window.open(url, 'popUpWindow','height=600,width=600,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
-}
+  function newPopup(url) {
+    popupWindow = window.open(url, 'popUpWindow', 'height=600,width=600,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
+  }
 </script>
