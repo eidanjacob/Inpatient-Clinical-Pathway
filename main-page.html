@@ -1,13 +1,17 @@
 <div class="diagram">
   <div style="text-align:center;">
-    <img src="sites/stony-brook-childrens-logo-horizontal-300.png" alt="Stony Brook Children's Logo" style="width: 300px; margin-left: 15px; margin-top: 15px;">
-    <h2 style="margin-left:100px";>Division of Pediatric Anesthesiology</h2>
+    <img src="sites/stony-brook-childrens-logo-horizontal-300.png" alt="Stony Brook Children's Logo"
+      style="width: 300px; margin-left: 15px;">
+    <h2 style="margin-left:100px; margin-top:15px;">Division of Pediatric Anesthesiology</h2>
+    </br>
+    <h2 style="margin-left:100px;">Idiopathic Scoliosis Clinical Pathway</h3>
   </div>
 </div>
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a href="JavaScript:newPopup('preop.html');">Pre-Operative Clinic</a>
+      <!--      <a href=sites/preop.html>Pre-Operative Clinic</a>-->
+      <a href="JavaScript:launchLink('preop.html');">Pre-Operative Clinic</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -21,10 +25,10 @@
   <div style="text-align:center;">
     <div class="invisible-box"></div>
     <div class="box">
-      <a href="JavaScript:newPopup('surgical-day.html');">Surgical Day</a>
+      <a href="JavaScript:launchLink('surgical-day.html');">Surgical Day</a>
     </div>
     <div class="side-box">
-      <a class="popup" href="JavaScript:newPopup('general-guidelines.html');">Guidelines</a>
+      <a class="popup" href="JavaScript:launchLink('general-guidelines.html');">Guidelines</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -36,19 +40,19 @@
   <div class="diagram-text">
     <b style="color:#9a0041">POD 0 Goals</b>
     <p>PCA Initiation</p>
-    <p>Analgesia regimen</p>
+    <p>Analgesia Regimen</p>
   </div>
   <div class="right-upper-box">
-    <a href="JavaScript:newPopup('pump-setup.html');">Pump Setup</a>
+    <a href="JavaScript:launchLink('pump-setup.html');">Pump Setup</a>
   </div>
   <div class="right-upper-box">
-    <a href="JavaScript:newPopup('hemodilution.html');">Hemodilution</a>
+    <a href="JavaScript:launchLink('hemodilution.html');">Hemodilution</a>
   </div>
 </div>
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a href="JavaScript:newPopup('pod-one.html');">POD 1</a>
+      <a href="JavaScript:launchLink('pod-one.html');">POD 1</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -59,15 +63,15 @@
   </div>
   <div class="diagram-text">
     <b style="color:#9a0041">POD 1 Goals</b>
-    <p>Begin PO Analgesia</p>
-    <p>Advance Mobility</p>
-    <p>Consider DC Foley</p>
+    <p>Transition to PO Analgesia</p>
+    <p>PT for Mobility</p>
+    <p>DC Foley</p>
   </div>
 </div>
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a href="JavaScript:newPopup('pod-two.html');">POD 2</a>
+      <a href="JavaScript:launchLink('pod-two.html');">POD 2</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -78,20 +82,20 @@
   </div>
   <div class="diagram-text">
     <b style="color:#9a0041">POD 2 Goals</b>
-    <p>Begin PO Analgesia</p>
     <p>Advance Mobility</p>
+    <p>Plan for Discharge</p>
   </div>
   <div class="right-lower-box">
-    <a href="JavaScript:newPopup('fever.html');">Fever Management</a>
+    <a href="JavaScript:launchLink('fever.html');">Fever Management</a>
   </div>
   <div class="right-lower-box">
-    <a href="JavaScript:newPopup('complications.html');">Complications</a>
+    <a href="JavaScript:launchLink('complications.html');">Complications</a>
   </div>
 </div>
 <div class="diagram">
   <div style="text-align:center;">
     <div class="box">
-      <a href="JavaScript:newPopup('pod-three.html');">POD 3</a>
+      <a href="JavaScript:launchLink('pod-three.html');">POD 3</a>
     </div>
     <br />
     <div class="arrow-wrapper">
@@ -102,9 +106,8 @@
   </div>
   <div class="diagram-text">
     <b style="color:#9a0041">POD 3 Goals</b>
-    <p>Begin PO Analgesia</p>
     <p>Advance Mobility</p>
-    <p>Plan For Discharge</p>
+    <p>Plan for Discharge</p>
   </div>
 </div>
 <div class="diagram">
@@ -144,7 +147,7 @@
     display: r;
     margin-left: 700px;
     margin-top: -100px;
-    text-align:center;
+    text-align: center;
   }
 
   .diagram-text {
@@ -185,7 +188,7 @@
   .arrow-wrapper {
     position: absolute;
     display: inline-block;
-    left: 300px;
+    left: 290px;
     margin-top: 10px;
   }
 
@@ -207,7 +210,7 @@
 </style>
 
 <script type="text/javascript">
-  function newPopup(url) {
-    popupWindow = window.open('sites/' + url, 'popUpWindow', 'height=600,width=600,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
+  function launchLink(url) {
+    window.open('sites/' + url, '_self')
   }
 </script>

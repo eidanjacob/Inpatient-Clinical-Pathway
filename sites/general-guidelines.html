@@ -30,7 +30,7 @@ Goal directed fluid management is the guiding principle for perioperative manage
         intravascular
         volume.</li>
     <li>Cell Saver.</li>
-    <li><a href="JavaScript:newPopup('hemodilution.html');">Acute Isovolemic Hemodilution.</a></li>
+    <li><a href="JavaScript:launchHemo();">Acute Isovolemic Hemodilution.</a></li>
 </ul>
 <!-- link -->
 Anesthetic management must adequately perfuse a spinal cord at risk for ischemic insults, while permitting effective
@@ -45,13 +45,15 @@ with anion gap, increasing lactate levels, or changes in neural monitoring signa
 These should be addressed expeditiously to increase global oxygen delivery.
 
 <script type="text/javascript">
-    function newPopup(url) {
-        popupWindow = window.open(url, 'popUpWindow', 'height=600,width=600,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
+    function launchHemo(url){
+      window.open('hemodilution.html', '_self')
     }
-</script>
+  </script>
 
 <style>
     body {
         background-color: rgba(227, 224, 193);
+        max-width: 600px;
+        margin: 0 auto;
     }
 </style>
